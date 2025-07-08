@@ -1,0 +1,22 @@
+[project]
+name = "geopandas_study"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "geopandas",
+]
+
+[tool.uv.workspace]
+members = [
+    "geopandas",
+]
+
+[tool.uv.sources]
+geopandas = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
